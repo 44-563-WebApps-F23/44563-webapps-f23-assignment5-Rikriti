@@ -1,198 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Bootstrap Lab05</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <a class="navbar-brand" href="#">A Few Cities</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse col-sm-2" id="navbar">
-          <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                  <a class="nav-link" href="basic.html">Basic</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="advanced.html">Advanced</a>
-              </li> 
-          </ul>
-      </div>
-  </nav>
-    <h1>Visit Cities with Rikriti</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-2">K</div>
-        <div class="col-sm-2">O</div>
-        <div class="col-sm-2">I</div>
-        <div class="col-sm-2">R</div>
-        <div class="col-sm-2">A</div>
-        <div class="col-sm-2">L</div>
-      </div>
-      <div class="row">
-        <div class="col-md">Kathmandu</div>
-        <div class="col-md">Ottawa</div>
-        <div class="col-md">Ilam</div>
-        <div class="col-md">Rome</div>
-        <div class="col-md">Austin</div>
-        <div class="col-md">London</div>
-      </div>
-    </div>
-    <br />
-    <h4>My answer:</h4>
-    <p>
-      The row with city names will break first because the col-md class in bootstrap 
-      takes the screen width greater or equal than 768px however, the row with letters
-      having col-sm-2 class break after reaching 575px as the class col-sm-2 comes in
-      handy for smaller screen devices.
-    </p>
+<head>
+  <title>Bootstrap Lab05</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-</div>
-<div>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</head>
 
-<div class="container">
-    <h4>Responsive</h4>
-    <div class="row">
-      <div class="col-md-4">
-        <img src="ktm.jpg" alt="ktm" class="img-fluid">
-      </div>
-      <div class="col-md-4">
-        <img src="ottawa.jpg" alt="ottawa" class="img-fluid">
-      </div>
-      <div class="col-md-4">
-        <img src="rome.jpg" alt="rome" class="img-fluid">
-      </div>
-    </div>
-  </div>
-  <br>
-  <div class="container">
-    <h4>img-thumbnail</h4>
-    <div class="row">
-      <div class="col-md-4">
-        <img src="ktm.jpg" alt="ktm" class="img-thumbnail">
-      </div>
-      <div class="col-md-4">
-        <img src="ottawa.jpg" alt="ottawa" class="img-thumbnail">
-      </div>
-      <div class="col-md-4">
-        <img src="rome.jpg" alt="rome" class="img-thumbnail">
-      </div>
-    </div>
-  </div>
-<br>
- <div class="container">
-    <h4>Table</h4>
-    <table class="table table-bordered">
-      <caption>Table containing some information on Cities, Rivers, Trees and for the names of cities starting with Lastname letters.</caption>
-      <thead class="table-dark">
-        <tr>
-          <th scope="col">Letter</th>
-          <th scope="col">City</th>
-          <th scope="col">River</th>
-          <th scope="col">Tree</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="table-info">
-          <th scope="row">K</th>
-          <td>Ktm</td>
-          <td>Bagmati River</td>
-          <td>Alder</td>
-        </tr>
-        <tr>
-          <th scope="row">O</th>
-          <td>Ottawa</td>
-          <td>Ottawa River</td>
-          <td>Maple</td>
-        </tr>
-        <tr class="table-info">
-          <th scope="row">I</th>
-          <td>Ilam</td>
-          <td>Koshi River</td>
-          <td>Pine</td>
-        </tr>
-        <tr>
-          <th scope="row">R</th>
-          <td>Rome</td>
-          <td>Venice River</td>
-          <td>Holly</td>
-        </tr>
-        <tr class="table-info">
-          <th scope="row">A</th>
-          <td>Austin</td>
-          <td>Guadalupe River</td>
-          <td>Oak</td>
-        </tr>
-        <tr>
-          <th scope="row">L</th>
-          <td>London</td>
-          <td>River Fleet</td>
-          <td>Cedar</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-<br>
- <br>
-  <div class="container">
-    <h4>Buttons</h4>
-    <button type="button" class="btn btn-primary">K</button>
-    <button type="button" class="btn btn-primary">O</button>
-    <button type="button" class="btn btn-primary">I</button>
-    <button type="button" class="btn btn-primary">R</button>
-    <button type="button" class="btn btn-primary">A</button>
-    <button type="button" class="btn btn-primary">L</button>
-</div>
-<br>
-<div class="container">
-  <h4>Button Groups</h4>
-  <div class="btn-toolbar">
-    <div class="btn-group" role="Success" aria-label="First Group">
-      <button type="button" class="btn btn-success">K</button>
-      <button type="button" class="btn btn-success">O</button>
-      <button type="button" class="btn btn-success">R</button>
-    </div>
-    <div class="btn-group" role="Warning" aria-label="Second Group">
-      <button type="button" class="btn btn-warning">I</button>
-      <button type="button" class="btn btn-warning">A</button>
-    </div>
-    <div class="btn-group" role="Danger" aria-label="Third Group">
-      <button type="button" class="btn btn-danger">L</button>
-    </div>
-  </div>
-</div>
-<br>
-<div class="container">
-  <div class="dropdown">
-    <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Dropdown-Menu
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">A Few Cities</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <ul class="dropdown-menu dropdown-menu-light">
-      <li><a class="dropdown-item" href="basic.html">Basic Page</a></li>
-      <li><a class="dropdown-item" href="advanced.html">Advanced Page</a></li>
-    </ul>
+    <div class="collapse navbar-collapse col-sm-2" id="navbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="basic.html">Basic</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="advanced.html">Advanced</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <h1>Visit Cities with Rikriti</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">K</div>
+      <div class="col-sm-2">O</div>
+      <div class="col-sm-2">I</div>
+      <div class="col-sm-2">R</div>
+      <div class="col-sm-2">A</div>
+      <div class="col-sm-2">L</div>
+    </div>
+    <div class="row">
+      <div class="col-md">Kathmandu</div>
+      <div class="col-md">Ottawa</div>
+      <div class="col-md">Ilam</div>
+      <div class="col-md">Rome</div>
+      <div class="col-md">Austin</div>
+      <div class="col-md">London</div>
+    </div>
   </div>
-</div>
-<br>
-  </body>
+  <br />
+  <h4>My answer:</h4>
+  <p>
+    The row with city names will break first because the col-md class in bootstrap
+    takes the screen width greater or equal than 768px however, the row with letters
+    having col-sm-2 class break after reaching 575px as the class col-sm-2 comes in
+    handy for smaller screen devices.
+  </p>
+
+  </div>
+  <div>
+
+    <div class="container">
+      <h4>Responsive</h4>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="ktm.jpg" alt="ktm" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <img src="ottawa.jpg" alt="ottawa" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <img src="rome.jpg" alt="rome" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <h4>img-thumbnail</h4>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="ktm.jpg" alt="ktm" class="img-thumbnail">
+        </div>
+        <div class="col-md-4">
+          <img src="ottawa.jpg" alt="ottawa" class="img-thumbnail">
+        </div>
+        <div class="col-md-4">
+          <img src="rome.jpg" alt="rome" class="img-thumbnail">
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <h4>Table</h4>
+      <table class="table table-bordered">
+        <caption>Table containing some information on Cities, Rivers, Trees and for the names of cities starting with
+          Lastname letters.</caption>
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Letter</th>
+            <th scope="col">City</th>
+            <th scope="col">River</th>
+            <th scope="col">Tree</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-info">
+            <th scope="row">K</th>
+            <td>Ktm</td>
+            <td>Bagmati River</td>
+            <td>Alder</td>
+          </tr>
+          <tr>
+            <th scope="row">O</th>
+            <td>Ottawa</td>
+            <td>Ottawa River</td>
+            <td>Maple</td>
+          </tr>
+          <tr class="table-info">
+            <th scope="row">I</th>
+            <td>Ilam</td>
+            <td>Koshi River</td>
+            <td>Pine</td>
+          </tr>
+          <tr>
+            <th scope="row">R</th>
+            <td>Rome</td>
+            <td>Venice River</td>
+            <td>Holly</td>
+          </tr>
+          <tr class="table-info">
+            <th scope="row">A</th>
+            <td>Austin</td>
+            <td>Guadalupe River</td>
+            <td>Oak</td>
+          </tr>
+          <tr>
+            <th scope="row">L</th>
+            <td>London</td>
+            <td>River Fleet</td>
+            <td>Cedar</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <h4>Buttons</h4>
+      <button type="button" class="btn btn-primary">K</button>
+      <button type="button" class="btn btn-primary">O</button>
+      <button type="button" class="btn btn-primary">I</button>
+      <button type="button" class="btn btn-primary">R</button>
+      <button type="button" class="btn btn-primary">A</button>
+      <button type="button" class="btn btn-primary">L</button>
+    </div>
+    <br>
+    <div class="container">
+      <h4>Button Groups</h4>
+      <div class="btn-toolbar">
+        <div class="btn-group" role="Success" aria-label="First Group">
+          <button type="button" class="btn btn-success">K</button>
+          <button type="button" class="btn btn-success">O</button>
+          <button type="button" class="btn btn-success">R</button>
+        </div>
+        <div class="btn-group" role="Warning" aria-label="Second Group">
+          <button type="button" class="btn btn-warning">I</button>
+          <button type="button" class="btn btn-warning">A</button>
+        </div>
+        <div class="btn-group" role="Danger" aria-label="Third Group">
+          <button type="button" class="btn btn-danger">L</button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown-Menu
+        </button>
+        <ul class="dropdown-menu dropdown-menu-light">
+          <li><a class="dropdown-item" href="basic.html">Basic Page</a></li>
+          <li><a class="dropdown-item" href="advanced.html">Advanced Page</a></li>
+        </ul>
+      </div>
+    </div>
+    <br>
+
+    <div class="container">
+      <h4>Form</h4>
+      <form>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp"></small>
+        </div><br>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" class="form-control" id="city" placeholder="Enter your city">
+        </div><br>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" id="newsletter"> Sign up for newsletter?
+          </label>
+        </div><br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <br>
+
+    <div class="container">
+      <div class="card-group">
+        <div class="card" style="width: 18rem;">
+          <img src="ktm.jpg" class="card-img-top" alt="ktm">
+          <div class="card-body">
+            <h5 class="card-title">Kathmandu</h5>
+            <p class="card-text">Kathmandu, Nepal's capital, is set in a valley surrounded by the Himalayan mountains.
+              At the heart of the old city’s mazelike alleys is Durbar Square, which becomes frenetic during Indra
+              Jatra, a religious festival featuring masked dances. Many of the city's historic sites were damaged or
+              destroyed by a 2015 earthquake. Durbar Square's palace, Hanuman Dhoka, and Kasthamandap, a wooden Hindu
+              temple, are being rebuilt.</p>
+              <a href="https://en.wikipedia.org/wiki/Kathmandu" class="btn btn-primary">View More</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="ottawa.jpg" class="card-img-top" alt="ottawa">
+          <div class="card-body">
+            <h5 class="card-title">Ottawa</h5>
+            <p class="card-text">Ottawa is the capital city of Canada.
+              It is located in the southern portion of the province of Ontario, at the confluence of the Ottawa River
+              and the Rideau River. Ottawa borders Gatineau, Quebec, and forms the core of the Ottawa–Gatineau census
+              metropolitan area (CMA) and the National Capital Region (NCR).</p>
+            <a href="https://en.wikipedia.org/wiki/Ottawa" class="btn btn-primary">View More</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="rome.jpg" class="card-img-top" alt="rome">
+          <div class="card-body">
+            <h5 class="card-title">Rome</h5>
+            <p class="card-text">Rome is the capital city of Italy. It is also the
+              capital of the Lazio region, the centre of the Metropolitan City of Rome, and a special comune named
+              Comune di Roma Capitale. With 2,860,009 residents in 1,285 km2 (496.1 sq mi), Rome is the country's
+              most populated comune and the third most populous city in the European Union by population within city
+              limits.</p>
+            <a href="https://en.wikipedia.org/wiki/Rome" class="btn btn-primary">View More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
 </html>
